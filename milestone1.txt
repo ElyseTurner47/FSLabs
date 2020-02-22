@@ -137,8 +137,3 @@ echo "-----------------------------------------"
 echo "The default login should be 'admin' for username and the 'admin' for the password"
 
 rm -rf ~/temp
-
-0 words
-Max size 500 MB
-Drag & Drop
-
