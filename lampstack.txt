@@ -1,0 +1,27 @@
+#lampstack
+
+#This section updates the machine and installs the prerequisites 
+
+yum update -y
+
+yum install -y epel-release
+
+yum install -y httpd wget php php-mysql php-pear php-gd php-mbstring php-pdo php-pear-Log php-ZendFramework-Search-Lucene php-pear-Image-Text mariadb-server firewalld
+
+#This section enables the firewall and ensures it starts on reboot/start up
+
+systemctl enable firewalld
+
+systemctl start firewalld
+
+#This starts Apache and ensures it starts on reboot/start up of the server
+
+systemctl enable httpd
+
+systemctl start httpd
+
+#This starts MariaDB and ensures it starts on reboot/start up of the server
+
+systemctl enable mariadb
+
+systemctl start mariadb
